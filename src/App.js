@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NavBar from "./components/NavBar";
 import './styles/styles.css';
 import About from "./components/About";
-import Home from "./components/index.js";
+import Home from "./components/Home.js";
 import AdoptPet from "./components/AdoptPet.js";
 import Login from './components/Login.js';
 import SignUp from './components/SignUp.js';

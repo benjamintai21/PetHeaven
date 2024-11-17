@@ -10,12 +10,12 @@ import dog4 from '../images/dog4.jpg'
 import r1 from '../images/r1.jpg';
 import r2 from '../images/r2.jpg';
 import r3 from '../images/r3.jpg';
-import ShowCat from './ShowCat_Resource';
+import ShowCat from './ShowCat_Resource.js';
 
-import Show1Cat from './Show1Cat';
+import Show1Cat from './Show1Cat.js';
 import Show1Dog from './Show1Dog.js';
 
-import Footer from './Footer';
+import Footer from './Footer.js';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
