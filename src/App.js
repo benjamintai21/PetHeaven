@@ -46,7 +46,7 @@ const handleLogin = () => {
 
             
               <Routes>
-              <Route path="/" exact element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/adopt" element={<AdoptPet />} />
               <Route path="/release" element={<ReleasePet />} />  
               <Route path="/confirm-adoption" element={<ConfirmAdoption/>} />
