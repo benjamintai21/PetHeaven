@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, Form} from "react-router-dom";
 import NavBar from "./components/NavBar";
 import './styles/styles.css';
 import About from "./components/About";
@@ -12,7 +13,6 @@ import MyAdopt from './components/MyAdopt.js';
 import ConfirmAdoption from './components/ConfirmAdopt.js';
 import ThankYou from './components/ThankYou.js';
 
-import { BrowserRouter as Router, Route, Routes, Form} from "react-router-dom";
 
 function App() {
 
