@@ -105,6 +105,9 @@
     .form-container, .log-container{
       width: 90%;
     }
+    .view_top{
+      width: 100%;
+    }
     
     
   }
