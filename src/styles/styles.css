@@ -1015,8 +1015,10 @@ button{
   .bannerBtn,.whoBtn{
     font-size: 25px;
   }
-  .bannerLink{margin-left: 0px;
-  font-size: 15px;}
+  .bannerLink{
+    margin-top: 10%;
+    margin-left: 0px;
+    font-size: 15px;}
   .hc2{
     h1{font-size: 30px;}
     p{font-size: 15px;}
@@ -1101,6 +1103,7 @@ button{
   .r_item{
     height: 350px;
     width: 300px;
+    padding: 5%;
   }
 
   .image {
