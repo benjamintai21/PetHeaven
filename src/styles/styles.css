@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -164,10 +165,11 @@ blockquote{
     
   }
 
-  .cell:hover .cell-inner{
+  .cell:hover .cell-inner, .cell:active .cell-inner{
     transition-delay: 250ms;
     transform: rotateY(180deg);
   }
+
   .cell-front, .cell-back{
     position: absolute;
     width: 100%;
@@ -271,6 +273,7 @@ button{
     url('hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   width: 100%;
   display: flex;
 
@@ -980,6 +983,10 @@ button{
 
 
 @media screen and (max-width: 992px) {
+  h1{font-size: 25px !important;}
+  h2{font-size: 20px !important;}
+  p{font-size: 15px !important;}
+  
   .showlist {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -989,6 +996,87 @@ button{
   }
   blockquote{ font-size: 13px; }
   h2{font-size: 15px;}
+  .menuitem a {
+    padding: 3%;
+  }
+  .menuitem{flex-direction: column;}
+  .home_btm{display: flex;
+    padding: 5px;
+    width:90%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;}
+  .home_container{
+    h1{font-size: 30px;}
+    p{font-size: 15px;}
+  }
+  .bannerBtn,.whoBtn{
+    font-size: 25px;
+  }
+  .bannerLink{margin-left: 0px;
+  font-size: 15px;}
+  .hc2{
+    h1{font-size: 30px;}
+    p{font-size: 15px;}
+  }
+  .hc22{
+    h1{font-size: 30px;}
+    p{font-size: 15px;}
+    img{width: 90%;
+    height: 90%;}
+  }
+  .r_container{
+    h1{font-size: 30px;}
+    p{font-size: 15px;}
+  }
+  .hc3{
+    h1{font-size: 30px;}
+    p{font-size: 15px;}
+    h2{font-size: 20px;}
+    video{width: 95%;}
+  }
+  .shelter{
+    h1{font-size: 30px;}
+    p{font-size: 15px;}
+  }
+  .p_content{
+    flex-direction: column;
+  }
+  .p_view{
+    width: 80%;
+  }
+  .about_content{
+    flex-direction: column;
+  }
+  .about_container1{
+    flex-direction: column;
+  }
+  .ac1_right{
+    text-align: center;
+    padding-top: 5%;
+  }
+  .team_header{
+    img{width: 90%;}
+  }
+  .ac1_left{
+    p{padding-bottom: 5%;}
+  }
+  .team_con{
+    flex-direction: column;
+  }
+  .ty_content{
+   width: 90%;   
+   img{width: 90%;
+  height: 90%;}
+  }
+  .tyimage{
+    width: 10% !important;;
+  }
+  .r_review{
+    padding:1%;
+  }
+  
+  
 }
 
 @media screen and (max-width: 600px) {

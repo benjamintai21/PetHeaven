@@ -95,5 +95,22 @@
     font-size: 15px;
     color: red;
   }
+  @media screen and (max-width: 992px) {
+    .signupcontainer{flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+    .petinfo{width: 80%;
+    margin-left: 0;}
+    .change-pet-btn{display: none;}
+    .form-container{
+      width: 90%;
+    }
+    
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+  }
 
   
