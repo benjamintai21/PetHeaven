@@ -999,7 +999,9 @@ button{
   .menuitem a {
     padding: 3%;
   }
-  .menuitem{flex-direction: column;}
+  .menuitem{
+    width:100%;
+    flex-direction: column;}
   .home_btm{display: flex;
     padding: 5px;
     width:90%;
