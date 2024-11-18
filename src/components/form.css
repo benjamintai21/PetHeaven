@@ -102,7 +102,7 @@
     .petinfo{width: 80%;
     margin-left: 0;}
     .change-pet-btn{display: none;}
-    .form-container{
+    .form-container, .log-container{
       width: 90%;
     }
     
