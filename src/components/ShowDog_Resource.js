@@ -68,13 +68,18 @@ const Resource  = ( { path,  render  }    ) => {
 const ShowDog = () => {
 
     const webURL = 'https://api.thedogapi.com/v1/images/search?limit=12&has_breeds=1&api_key=live_ILpkpiXx0Iz53QUPmT4qotFbEF2lvWE2dXCmxxqxRtBEgkd994IXGEnUbSqza4t2';
-    
     const navigate = useNavigate(); // Initialize navigate
-
+  
     // Function to handle the Adopt Now button
-    const handleAdopt = (cat) => {
-        // Navigate to SignUp page with the selected cat data
-        navigate('/confirm-adoption', { state: { pet: cat, type: 'cat' } });
+    const handleAdopt = (dog) => {
+      const storedIsLoggedIn = localStorage.getItem('isLoggedIn') === 'true'; // Check if user is logged in
+  
+      if (!storedIsLoggedIn) {
+        navigate('/signup', { state: { pet: dog, type: 'dog' } }); // Redirect to the SignUp page if not logged in
+      } else {
+        // Navigate to Confirm Adoption page with the selected cat data if logged in
+        navigate('/confirm-adoption', { state: { pet: dog, type: 'dog' } });
+      }
     };
 
     const render = ( data ) => {
